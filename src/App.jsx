@@ -25,7 +25,7 @@ function App() {
     <MyState>
       <Router>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/deploy" element={<Home />} />
           <Route path="/allproducts" element={<Allproducts />} />
           <Route path="/order" element={
             <ProtectedRoute>
@@ -56,6 +56,8 @@ function App() {
         <ToastContainer/>
       </Router>
     </MyState>
+
+    
 
   )
 }
