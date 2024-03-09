@@ -51,7 +51,7 @@ function App() {
               <UpdateProduct/>
             </ProtectedRouteForAdmin>
           } />
-          <Route path="/*" element={<NoPage />} />
+          {/* <Route path="/*" element={<NoPage />} /> */}
         </Routes>
         <ToastContainer/>
       </Router>
