@@ -25,7 +25,7 @@ function App() {
     <MyState>
       <Router>
         <Routes>
-          <Route path="/deploy" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/allproducts" element={<Allproducts />} />
           <Route path="/order" element={
             <ProtectedRoute>
