@@ -1,9 +1,16 @@
 import React from 'react'
+import back from './back.png'
 
 function HeroSection() {
   return (
     <div>
-        <img src="https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" alt="" />
+        <img src={back} alt="" 
+        style={{ 
+          width: '100%',    // Set width to maximum
+          height: '90vh',    // Set height to 80vh
+          objectFit: 'cover',
+          objectPosition: 'center'
+        }} />
     </div>
   )
 }
