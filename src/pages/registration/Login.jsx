@@ -33,7 +33,7 @@ function Login() {
                 theme: "colored",
               })
             localStorage.setItem('user', JSON.stringify(result))
-            navigate('/')
+            navigate('/deploy')
             setLoading(false)
             
         } catch (error) {
