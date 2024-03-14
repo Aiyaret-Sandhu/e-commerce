@@ -8,7 +8,7 @@ function HeroSection() {
         style={{ 
           width: '100%',    // Set width to maximum
           height: '90vh',    // Set height to 80vh
-          objectFit: 'cover',
+          objectFit: 'contain',
           objectPosition: 'center'
         }} />
     </div>

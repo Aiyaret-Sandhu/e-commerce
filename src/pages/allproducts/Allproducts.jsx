@@ -51,17 +51,16 @@ function Allproducts() {
                                     </div>
                                     <div className="p-5 border-t-2">
                                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{ color: mode === 'dark' ? 'white' : '', }}>The Groco</h2>
-                                        <h1 className="title-font text-lg font-medium text-gray-900 mb-3" style={{ color: mode === 'dark' ? 'white' : '', }}>{title}</h1>
+                                        <h1 className="title-font text-lg h-16 capitalize font-medium text-green-900 mb-3" style={{ color: mode === 'dark' ? 'white' : '', }}>{title}</h1>
                                         <hr />
                             
                                         {/* <p className="leading-relaxed mb-3">{item.description.}</p> */}
-                                        <p className="leading-relaxed mb-3" style={{ color: mode === 'dark' ? 'white' : '' }}>₹{price}</p>
-                                        <hr />
-                                        <br />
+                                        <p className="leading-relaxed mb-3 h-10 text-lg text-green-600" style={{ color: mode === 'dark' ? 'white' : '' }}>₹{price}</p>
+                                        
                                         <div className=" flex justify-center">
                                             <button type="button" 
                                             onClick={()=> addCart(item)}
-                                            className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add To Cart</button>
+                                            className="mx-4 focus:outline-none text-white bg-green-800 hover:bg-green-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add To Cart</button>
 
                                         </div>
                                     </div>
