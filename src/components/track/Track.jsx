@@ -6,7 +6,7 @@ function Track() {
     const { mode } = context;
     return (
         <div>
-            <section>
+            {/* <section>
                 <div className=" container mx-auto px-40 mt-10 md:py-5">
                     <div className="flex flex-wrap -m-3 text-center">
                         <div className="p-4 md:w-1/3 sm:w-1/2 ">
@@ -46,7 +46,7 @@ function Track() {
                         
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }

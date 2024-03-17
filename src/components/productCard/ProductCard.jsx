@@ -53,7 +53,7 @@ function ProductCard() {
                                             <button type="button" 
                                             onClick={()=> addCart(item)}
                                             className="mx-4 focus:outline-none text-white bg-green-800 hover:bg-green-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2"
-                                            >Add To Cart 🛒</button>
+                                            >Add To Cart </button>
 
                                         </div>
                                     </div>
