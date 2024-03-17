@@ -8,8 +8,8 @@ function Filter() {
 
     return (
         <div>
-            <div className=' container flex px-40 py-10 mt-5 '>
-                <div className="p-10 flex justify-between rounded-lg bg-gray-100 drop-shadow-xl border border-gray-200"
+            <div className=' container flex px-36 py-10 mt-5 '>
+                <div className="p-10 flex justify-between rounded-sm bg-gray-50 drop-shadow-md"
                     style={{
                         backgroundColor: mode === 'dark' ? '#282c34' : '',
                         color: mode === 'dark' ? 'white' : '',
@@ -42,7 +42,7 @@ function Filter() {
 
                     <div className='ml-10'>
                         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
-                            <select value={filterType} onChange={(e)=> setFilterType(e.target.value)} className="px-4 py-3 w-full rounded-md bg-gray-50 border-transparent outline-0 focus:border-gray-500 focus:bg-white focus:ring-0 text-lg" style={{ backgroundColor: mode === 'dark' ? 'rgb(64 66 70)' : '', color: mode === 'dark' ? 'white' : '', }}>
+                            <select value={filterType} onChange={(e)=> setFilterType(e.target.value)} className="px-4 py-3 w-32 rounded-md bg-gray-50 border-transparent outline-0 focus:border-gray-500 focus:bg-white focus:ring-0 text-lg" style={{ backgroundColor: mode === 'dark' ? 'rgb(64 66 70)' : '', color: mode === 'dark' ? 'white' : '', }}>
 
                                 {product.map((item, index) => {
                                     return (

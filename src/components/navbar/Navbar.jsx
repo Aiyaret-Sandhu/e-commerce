@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react'
 import { RxCross2 } from 'react-icons/rx'
 import { useSelector } from 'react-redux';
+import logo from './logo.png';
 
 function Navbar() {
   const context = useContext(myContext);
@@ -25,7 +26,7 @@ function Navbar() {
   const cartItems = useSelector((state) => state.cart)
 
   return (
-    <div className='bg-white sticky top-0 z-50 ml-10 mr-10' >
+    <div className='bg-white sticky top-0 z-50' >
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
           <Transition.Child
@@ -139,7 +140,8 @@ function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={'/'} className='flex'>
                   <div className="flex ">
-                    <h1 className=' flex text-4xl text-black  px-2 py-1 rounded text-green-800' style={{ color: mode === 'dark' ? 'white' : '', }}>&#x1F343; The Groco </h1>
+                    <h1 className=' flex text-4xl text-black  px-2 py-1 rounded text-green-900' style={{ color: mode === 'dark' ? 'white' : '', }}>🍃 The Groco </h1>
+                    
                   </div>
                 </Link>
               </div>

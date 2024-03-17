@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import myContext from '../../context/data/myContext'
 import { Link } from 'react-router-dom';
+import './footer.css';
+import logo from './logo.png';
 
 
 function Footer() {
@@ -8,7 +10,7 @@ function Footer() {
   const { mode } = context;
   return (
     <div>
-      <hr />
+      {/* <hr />
       <footer className="text-gray-600 body-font" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }}>
         <div className="container px-12 py-6 mx-auto" >
           <div className="flex md:text-left text-center gap-2 order-first">
@@ -63,7 +65,7 @@ function Footer() {
             </div>
           </div>
 
-        </div>
+        </div> */}
 
         {/* <div className="bg-gray-200" style={{ backgroundColor: mode === 'dark' ? 'rgb(55 57 61)' : '', color: mode === 'dark' ? 'white' : '', }}>
           <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
@@ -101,6 +103,50 @@ function Footer() {
             </span>
           </div> 
         </div> */}
+        <footer className='footer'>
+        <div className="box-container">
+                <div className="box">
+                    <img className="groco_logo" src={logo} alt="groco main logo"/> 
+                    <p>Follow us to get instant updates about new products and deals</p>
+
+                    <div className="share">
+                        <a href="#" className="fa fa-facebook"></a>
+                        <a href="#" className="fa fa-twitter"></a>
+                        <a href="#" className="fa fa-instagram"></a>
+                        <a href="#" className="fa fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <div className="box">
+                    <h3> Contact info</h3>
+                    <a href="#" className="links"> <i className="fa fa-phone"> &#x2794;</i> +91 628 047 9311 </a>
+                    <a href="#" className="links"> <i className="fa fa-phone">&#x2794; </i> +91 628 047 9389 </a>
+                    <a href="#" className="links"> <i className="fa fa-envelope">&#x2794; </i> infogroco011@gmail.com </a>
+                    <a href="#" className="links"> <i className="fa fa-map-marker"> &#x2794;</i> Rajpura , India -140401 </a>
+
+                </div>
+
+                <div className="box">
+                    <h3> quick links </h3>
+                    <a href="#home" className="links"> <i className="fa fa-arrow-right"> &#x2794;</i> home </a>
+                    {/* <a href="#features" className="links"> <i className="fa fa-arrow-right"> &#x2794;</i> features </a> */}
+                    <a href="#products" className="links"> <i className="fa fa-arrow-right"> &#x2794;</i> products </a>
+                    <a href="#categories" className="links"> <i className="fa fa-arrow-right"> &#x2794;</i> categories </a>
+                    <a href="#review" className="links"> <i className="fa fa-arrow-right"> &#x2794;</i> review </a>
+                    {/* <a href="#blogs" className="links"> <i className="fa fa-arrow-right"> &#x2794;</i> Blogs </a> */}
+
+                </div>
+
+                <div className="box">
+                    <h3> newsletter </h3>
+                    <p> Subscribe for latest updates </p>
+                    <input type="email" placeholder="Your Email" className="email"/> 
+                    <a href="login/index.html" target="_blank" className="btn">Subscribe</a>
+                    {/* <img src="image/payment.png" className="payment-img"/> */}
+                </div>
+                
+         </div> 
+
       </footer>
     </div>
   )
