@@ -145,7 +145,7 @@ function Cart() {
   // }
   return (
     <Layout >
-      <div className="h-screen bg-gray-100 pt-5 mb-[60%] " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
+      <div className="h-screen bg-gray-100 pt-5 -mb-44 " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
         <h1 className="mb-10 text-center text-green-900 text-4xl font-bold" style={{ color: mode === 'dark' ? 'white' : '', }}>Cart Items</h1>
         <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0 ">
           <div className="rounded-lg md:w-2/3 ">
