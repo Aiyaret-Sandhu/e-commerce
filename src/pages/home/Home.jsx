@@ -17,7 +17,7 @@ function Home() {
       <ProductCard />
       <div className="flex justify-center -mt-2 mb-4">
         <Link to={'/allproducts'}>
-          <button className=' bg-gray-200 hover:bg-purple-200 px-8 py-2 rounded-sm text-xl'>See more</button>
+          <button className=' bg-green-600 hover:bg-green-700 px-8 py-2 rounded-sm text-xl text-white'>See more</button>
         </Link>
       </div>
       <Track />

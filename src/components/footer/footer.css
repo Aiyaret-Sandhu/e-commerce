@@ -18,7 +18,7 @@
 {
     font-size: 1.3rem;
     text-transform: capitalize;
-    color: rgb(20,20,20);
+    color: rgb(2, 80, 2);
     padding: 1rem 0;
 }
 
@@ -31,13 +31,13 @@
 {
     display: block;
     font-size: 0.9rem;
-    color: rgb(82, 82, 82);
+    color: green;
     padding: 0.4rem 0;
 }
 
 .footer .box-container .box .links i
 {
-    color: rgb(82, 82, 82);
+    color: green;
     padding-right: 0.5rem;
 }
 
@@ -50,7 +50,7 @@
 {
     line-height: 1.8;
     font-size: 1rem;
-    color: var(--light-color);
+    color: green;
     padding: 0.6rem 0;
 }
 

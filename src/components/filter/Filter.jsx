@@ -9,15 +9,18 @@ function Filter() {
     return (
         <div>
             <div className=' container flex px-36 py-10 mt-5 '>
-                <div className="p-10 flex justify-between rounded-sm bg-gray-50 drop-shadow-md"
+                <div className="p-10 flex justify-between rounded-md bg-green-600 drop-shadow-md"
                     style={{
                         backgroundColor: mode === 'dark' ? '#282c34' : '',
                         color: mode === 'dark' ? 'white' : '',
                     }}>
                     
                     <div className="flex items-center justify-between">
-                        <button className="px-8 py-4 bg-gray-300 hover:bg-gray-400 text-gray-800 text-sm font-medium rounded-md ml-40" style={{ color: mode === 'dark' ? 'black' : '', fontSize: '1.25rem' }}>
-                        Filter
+                        <button className="px-8 flex gap-2 py-4 bg-white hover:bg-gray-900 text-green-900 hover:text-white text-sm font-medium rounded-md ml-40" style={{ color: mode === 'dark' ? 'black' : '', fontSize: '1.25rem' }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-funnel mt-0" viewBox="0 0 16 16">
+                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                        </svg>
+                        <div>Filter</div>
                         </button>
                         {/* <button className="px-4 py-4 bg-gray-300 hover:bg-gray-400 text-gray-800 text-sm font-medium rounded-md mr-40" style={{ color: mode === 'dark' ? 'white' : '', fontSize: '1.25rem' }}>
                             Reset Filter
