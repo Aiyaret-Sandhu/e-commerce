@@ -115,13 +115,13 @@ function Navbar() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
+      <header className="relative bg-white" style={{boxShadow: '0px 60px 100px rgba(11, 172, 11,0.5)'}}>
         {/* <p className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8" 
         style={{ backgroundColor: mode === 'dark' ? 'rgb(62 64 66)' : '', color: mode === 'dark' ? 'white' : '', }}>
           Get free delivery on orders over ₹300
         </p> */}
 
-        <nav aria-label="Top" className="bg-gray-100 px-4 sm:px-6 lg:px-8 shadow-xl " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
+        <nav aria-label="Top" className="bg-white px-4 sm:px-6 lg:px-8 shadow-xl py-2" style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
           <div className="">
             <div className="flex h-20 items-center">
               <button
@@ -141,11 +141,11 @@ function Navbar() {
                 <Link to={'/'} className='flex'>
                   <div className="flex ">
                     <h1 className=' flex text-3xl text-black px-2 py-1 rounded text-green-900' style={{ color: mode === 'dark' ? 'white' : '', }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-basket mr-3 mt-1" viewBox="0 0 16 16">
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-basket mr-3 mt-1" viewBox="0 0 16 16">
                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
-                      </svg>
-                      thegroco <span className='text-gray-800'>.com</span> </h1>
-                    
+                      </svg> */}
+                      {/* thegroco <span className='text-gray-800'>.com</span>*/} </h1> 
+                      <img src={logo} alt="" className='w-48' />
                   </div>
                 </Link>
               </div>
@@ -153,27 +153,27 @@ function Navbar() {
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
 
-                  <Link to={'/allproducts'} className="text-xl px-2 font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                    All Products
+                  <Link to={'/allproducts'} className="text-xl px-2 font-medium text-gray-700 hover:text-green-800" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  | All Products 📦 |
                   </Link>
-                 {user ?  <Link to={'/order'} className="text-xl px-2 font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                    Order
-                  </Link> :   <Link to={'/signup'}  className="text-xl px-2 font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                      Signup
+                 {user ?  <Link to={'/order'} className="text-xl px-2 font-medium text-gray-700 hover:text-green-800" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                 | Order 🛒 |
+                  </Link> :   <Link to={'/signup'}  className="text-xl px-2 font-medium text-gray-700 hover:text-green-800" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  | Signup 🔑 |
                     </Link>}
 
                   {user?.user?.email === 'arshsandhuprofessional@gmail.com' ? 
-                   <Link to={'/dashboard'} className="text-xl px-2  font-medium text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                    Admin
+                   <Link to={'/dashboard'} className="text-xl px-2  font-medium text-gray-700 hover:text-green-800" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                    | Admin 👨‍💼 |
                   </Link> : ""}
                   
                 
-                 {user ?  <a onClick={logout} className="text-xl px-2  font-medium text-gray-700 cursor-pointer  " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                    Logout
+                 {user ?  <a onClick={logout} className="text-xl px-2  font-medium text-gray-700 cursor-pointer  hover:text-green-800" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                 | Logout 🔒 |
                   </a> : ""}
                 </div>
 
-                <div className="hidden lg:ml-8 lg:flex">
+                {/* <div className="hidden lg:ml-8 lg:flex">
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
                       src="https://ecommerce-sk.vercel.app/img/indiaflag.png"
@@ -182,17 +182,17 @@ function Navbar() {
                     />
                     <span className="ml-3 text-xl px-2  font-medium" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
                   </a>
-                </div>
+                </div> */}
                 <div className="hidden lg:ml-8 lg:flex px-2">
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
-                      className="inline-block w-12 h-12 rounded-full"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Qm9VXcN_Ke3dW9ofTwLoKhOI_SUYK9WIDA&usqp=CAU"
+                      className="inline-block w-12 h-12 rounded-full" style={{objectFit: 'cover'}}
+                      src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710720000&semt=sph"
                       alt="Arsh_Sandhu" />
                   </a>
                 </div>
 
-                <div className="flex lg:ml-6">
+                <div className="flex lg:ml-8">
                   <button className='' onClick={toggleMode}>
                     {mode === 'light' ?
                       (<FiSun className='' size={40} />
@@ -203,7 +203,7 @@ function Navbar() {
                 </div>
 
                 {/* Cart */}
-                <div className="ml-4 flow-root lg:ml-6 px-2">
+                <div className="ml-4 flow-root lg:ml-8 px-2">
                   <Link to={'/cart'} className="group -m-2 flex items-center p-2" style={{ color: mode === 'dark' ? 'white' : '', }}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
