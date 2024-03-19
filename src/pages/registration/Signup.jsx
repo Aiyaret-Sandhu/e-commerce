@@ -10,6 +10,7 @@ import { FaLock } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaSignature } from "react-icons/fa";
+import logo from './logo.png';
 
 function Signup() {
     const [name, setName] = useState("");
@@ -66,7 +67,10 @@ function Signup() {
                 
                 <div  className="flex-1 flex items-center justify-center">
                     <div className='flex flex-col gap-8'>
-                    <div className='flex items-center space-x-4 py-2 text-4xl '>
+                    <div className='flex justify-center'>
+                        <img src={logo} alt="" className='w-64' /> 
+                    </div>
+                    <div className='flex items-center justify-center space-x-4 -mt-4 text-4xl '>
                         <h1 className='font-semibold'> Sign-up</h1>
                         <FaSignature />
                     </div>
