@@ -173,24 +173,14 @@ function Navbar() {
                   </a> : ""}
                 </div>
 
-                {/* <div className="hidden lg:ml-8 lg:flex">
-                  <a href="#" className="flex items-center text-gray-700 ">
-                    <img
-                      src="https://ecommerce-sk.vercel.app/img/indiaflag.png"
-                      alt=""
-                      className="block h-6 w-10 flex-shrink-0"
-                    />
-                    <span className="ml-3 text-xl px-2  font-medium" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
-                  </a>
-                </div> */}
-                <div className="hidden lg:ml-8 lg:flex px-2">
+                {user ? <div className="hidden lg:ml-8 lg:flex px-2">
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
                       className="inline-block w-12 h-12 rounded-full" style={{objectFit: 'cover'}}
                       src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710720000&semt=sph"
-                      alt="Arsh_Sandhu" />
-                  </a>
-                </div>
+                      alt="Arsh_Sandhu" /> 
+                  </a> 
+                </div> : "" }
 
                 <div className="flex lg:ml-8">
                   <button className='' onClick={toggleMode}>
